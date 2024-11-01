@@ -35,6 +35,34 @@ h1 {
   line-height: 1.1;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  flex: 1 1 calc(25% - 10px); 
+  width: 250px; 
+  height: 250px; 
+  margin: 10px; 
+  overflow: hidden; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; 
+} 
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -43,7 +71,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: border-color 0.25s;
 }
 button:hover {
